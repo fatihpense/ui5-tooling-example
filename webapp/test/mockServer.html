@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI5 Tooling Example Title</title>
+
+	<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-resourceroots='{
+				"fatihpense.ui.example.example-ui5-tooling": "../"
+			}'
+			data-sap-ui-oninit="module:fatihpense/ui/example/example-ui5-tooling/test/initMockServer"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+	</script>
+</head>
+<body class="sapUiBody">
+	<div data-sap-ui-component data-name="fatihpense.ui.example.example-ui5-tooling" data-id="container" data-settings='{"id" : "example-ui5-tooling"}'></div>
+</body>
+</html>
