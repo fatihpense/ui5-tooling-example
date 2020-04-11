@@ -15,3 +15,8 @@ server:
     afterMiddleware: compression
     configuration:
       baseUri: https://services.odata.org/V2/Northwind/Northwind.svc/
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      ext: "xml,json,properties"
+      path: "webapp"
