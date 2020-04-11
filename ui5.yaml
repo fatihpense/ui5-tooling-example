@@ -1,15 +1,10 @@
-specVersion: "1.0"
+specVersion: '2.0'
 metadata:
   name: example-ui5-tooling
 type: application
 # https://sap.github.io/ui5-tooling/pages/extensibility/CustomServerMiddleware/
 server:
   customMiddleware:
-  - name: ui5-middleware-simpleproxy
-    mountPath: /resources/
-    afterMiddleware: compression
-    configuration:
-      baseUri: https://sapui5.hana.ondemand.com/resources/
   - name: ui5-middleware-simpleproxy
     mountPath: /svc/
     afterMiddleware: compression
@@ -20,3 +15,11 @@ server:
     configuration:
       ext: "xml,json,properties"
       path: "webapp"
+framework:
+  name: SAPUI5
+  version: "1.76.1"
+  libraries:
+    - name: sap.f
+    - name: sap.m
+    - name: sap.ui.core
+    - name: themelib_sap_fiori_3
